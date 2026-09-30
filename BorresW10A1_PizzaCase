@@ -1,0 +1,44 @@
+print("========== PIZZA MENU ============")
+flavor = input("Hawaiian/Pepperoni/Cheese \nPick A Flavor: ").lower()
+size = input("Small/Medium/Large \nPick Size: ").lower()
+quantity = int(input("Quantity: "))
+
+match flavor:
+    case "hawaiian":
+        if size == "small":
+            price=250
+        elif size == "medium":
+            price=350
+        elif size == "large":
+            price=450
+        else:
+            price=0
+            print("Invalid Size")
+
+    case "pepperoni":
+        if size == "small":
+            price = 150
+        elif size == "medium":
+            price = 250
+        elif size == "large":
+            price = 350
+        else:
+            price = 0
+            print("Invalid Size")
+
+    case "cheese":
+        if size == "small":
+            price = 175
+        elif size == "medium":
+            price = 275
+        elif size == "large":
+            price = 375
+        else:
+            price = 0
+            print("Invalid Size")
+
+    case _:
+        print("Invalid Flavor")
+
+total = price * quantity
+print(f"Total Amount: {total:,.2f}")
