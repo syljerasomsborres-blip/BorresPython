@@ -1,44 +1,44 @@
 print("========== PIZZA MENU ============")
-flavor = input("Hawaiian/Pepperoni/Cheese \nPick A Flavor: ").lower()
-size = input("Small/Medium/Large \nPick Size: ").lower()
-quantity = int(input("Quantity: "))
+borresflavor = input("Hawaiian/Pepperoni/Cheese \nPick A Flavor: ").lower()
+borressize = input("Small/Medium/Large \nPick Size: ").lower()
+borresquantity = int(input("Quantity: "))
 
-match flavor:
+match borresflavor:
     case "hawaiian":
-        if size == "small":
-            price=250
-        elif size == "medium":
-            price=350
-        elif size == "large":
-            price=450
+        if borressize == "small":
+            borresprice=250
+        elif borressize == "medium":
+            borresprice=350
+        elif borressize == "large":
+            borresprice=450
         else:
-            price=0
+            borresprice=0
             print("Invalid Size")
 
     case "pepperoni":
-        if size == "small":
-            price = 150
-        elif size == "medium":
-            price = 250
-        elif size == "large":
-            price = 350
+        if borressize == "small":
+            borresprice = 150
+        elif borressize == "medium":
+            borresprice = 250
+        elif borressize == "large":
+            borresprice = 350
         else:
-            price = 0
+            borresprice = 0
             print("Invalid Size")
 
     case "cheese":
-        if size == "small":
-            price = 175
-        elif size == "medium":
-            price = 275
-        elif size == "large":
-            price = 375
+        if borressize == "small":
+            borresprice = 175
+        elif borressize == "medium":
+            borresprice = 275
+        elif borressize == "large":
+            borresprice = 375
         else:
-            price = 0
+            borresprice = 0
             print("Invalid Size")
 
     case _:
         print("Invalid Flavor")
 
-total = price * quantity
-print(f"Total Amount: {total:,.2f}")
+borrestotal = borresprice * borresquantity
+print(f"Total Amount: {borrestotal:,.2f}")
