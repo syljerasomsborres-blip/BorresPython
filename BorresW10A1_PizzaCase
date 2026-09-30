@@ -1,4 +1,4 @@
-print("========== PIZZA MENU ============")
+print("========== PIZZA MENU CALCULATOR ============")
 borresflavor = input("Hawaiian/Pepperoni/Cheese \nPick A Flavor: ").lower()
 borressize = input("Small/Medium/Large \nPick Size: ").lower()
 borresquantity = int(input("Quantity: "))
